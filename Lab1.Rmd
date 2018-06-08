@@ -1,0 +1,131 @@
+---
+title: "VSA Climate Change Lab 01"
+subtitle: "Exercises from Chapter 2"
+author: "Your name"
+date: "Add date"
+output:
+  pdf_document: default
+  html_document: default
+  github_document: default
+---
+
+```{r setup, include=FALSE}
+# This section sets up some options on knitr for processing the RMarkdown file
+knitr::knit_hooks$set(inline = function(x) { knitr:::format_sci(x, 'md')})
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r initialize, include=FALSE}
+# This section loads necessary R libraries and sources scripts that define 
+# useful functions format_md.
+# 
+library(tidyverse)
+library(stringr)
+
+source("scripts/format_md.R")
+```
+# Instructions:
+
+* Clone a local copy of the file repository from github.
+* In your local repository, answer the exercises in the template
+  `Lab1.Rmd`.
+* When you are done, knit your `.Rmd` file into a PDF file.
+* Use git to commit your changes (including the edits to `Lab1.Rmd`
+  and the new PDF file) to your local git repository.
+* Push the changes from your local git repository to github.
+
+
+## Exercise 1
+
+
+> A joule (J) is an amount of energy, and a watt (W) is a rate of using energy, 
+> defined as 1 W = 1 J/s. How many Joules of energy are required to run a 100-W 
+> light bulb for one day?
+
+```{r ex_2_1_a}
+
+
+```
+
+It can be hard to read a long number like that, so we can use R's format command to add commas:
+
+```{r formatting_example}
+#format_md(, comma = TRUE)
+```
+
+**Answer:** 
+
+> Burning coal yields about 30 &times; 10^6^ J of energy per kilogram of coal burned. 
+> Assuming that the coal power plant is 30% efficient,
+> how much coal has to be burned to light that light bulb for one day?
+
+```{r ex_2_1_b}
+
+```
+
+**Answer:** 
+
+
+## Exercise 2
+
+> A gallon of gasoline carries with it about 1.3 &times; 10^8^ J of energy. 
+> Given a price of $3 per callon, how many Joules can you get for a dollar?
+
+```{r ex_2_2_a}
+
+
+```
+
+**Answer:** 
+
+> Electricity goes for about $0.05 per kilowatt hour. A kilowatt hour is just a 
+> weird way to write Joules because a watt is a joule per second, and a kilowatt 
+> hour is the number of Joules one would get from running 1000 W time one hour
+> (3,600 seconds). In the form of electricity, how many Joules can you get for a 
+> dollar?
+
+```{r ex_2_2_b}
+
+
+```
+
+**Answer:**  
+
+> A standard cubic foot of natural gas carries with it about 1.1 &times; 10^6^ Joules
+> of energy. You can get about 5 &times; 10^5^ British Thermal Units (BTUs) of gas
+> for a dollar, and there are about 1,030 BTUs in a standard cubic foot. 
+> How many Joules of energy in the form of natural gas can you get for a dollar?
+
+```{r ex_2_2_c}
+
+
+```
+
+**Answer:** 
+
+> A ton of coal holds about 3.2 &times; 10^10^ J of energy and costs about $40.
+> How many Joules of energy in the form of coal can you get for a dollar?
+
+```{r ex_2_2_d}
+
+```
+
+**Answer:** 
+
+> Corn oil costs about $0.10 per fluid ounce wholesale. A fluid ounce carries
+> about 240 dietary Calories (which a scientist would call kilocalories).
+> A dietary Calorie is about 4200 J. How many Joules of energy in the form of
+> corn oil can you get for a dollar?
+
+```{r ex_2_2_e}
+
+
+```
+
+**Answer:** 
+
+> Rank these five energy sources from cheap to expensive. 
+> What is the range of prices?
+
+**Answer:** 
+
+
