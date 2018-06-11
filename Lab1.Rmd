@@ -1,6 +1,6 @@
 ---
 title: "VSA Climate Change Lab 01"
-subtitle: "Exercises from Chapter 2"
+subtitle: "Exercises to Introduce you to R"
 author: "Your name"
 date: "Add date"
 output:
